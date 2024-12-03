@@ -103,13 +103,7 @@ class BotCandidatureSpontanee
 
                         // Étape 5 : Remplir la lettre de motivation
                         var coverLetterTextarea = WaitForElement(driver, By.CssSelector("textarea[data-testid='apply-form-field-cover_letter']"), 10);
-                        string coverLetter = @"Actuellement admis à CESI Nanterre pour préparer un Bachelor Concepteur
-et Développeur d'Applications, je suis à la recherche d'une alternance pour
-poursuivre ma formation en troisième année. Passionné par l'informatique,
-avec une solide expérience en développement, gestion de projets
-informatiques et support technique acquise lors de mon BTS Services
-Informatiques aux Organisations (option SLAM), je suis motivé, dynamique et
-prêt à m'intégrer rapidement au sein d'une équipe.";
+                        string coverLetter = @" Votre message";
                         coverLetterTextarea.SendKeys(coverLetter);
 
                         // Étape 6 : Cocher les deux cases pour accepter les termes
