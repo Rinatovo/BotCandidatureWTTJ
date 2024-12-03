@@ -23,8 +23,8 @@ class BotCandidatureSpontanee
             loginButton.Click();
 
             var emailInput = WaitForElement(driver, By.Name("email_login"), 10);
-            emailInput.SendKeys("rinasolo2103@gmail.com");
-            driver.FindElement(By.Name("password")).SendKeys("Blacke2103007*");
+            emailInput.SendKeys("votre mail");
+            driver.FindElement(By.Name("password")).SendKeys("votre mot de passe*");
 
             var loginSubmitButton = driver.FindElement(By.CssSelector("[data-testid='login-button-submit']"));
             loginSubmitButton.Click();
